@@ -1,0 +1,86 @@
+let lowest = document.getElementById("lowest");
+let highest = document.getElementById("highest");
+let current = document.getElementById("current");
+let wind = document.getElementById("wind");
+let feelsLike = document.getElementById("feelsLike");
+let humidity = document.getElementById("humidity");
+let sunrise = document.getElementById("sunrise")
+let sunset = document.getElementById("sunset")
+
+
+function ApiCall() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=stockton&appid=2dc945bfebf121b50a8f1a27a2c8af72&units=imperial`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data => lowest.innerHTML = " Low." + Math.floor(data.main.temp_min) + "°"))
+}
+ApiCall();
+
+
+function ApiCall1() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=stockton&appid=2dc945bfebf121b50a8f1a27a2c8af72&units=imperial`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data => highest.innerHTML = " High." + Math.floor(data.main.temp_max) + "°"))
+}
+ApiCall1();
+
+function ApiCall2() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=stockton&appid=2dc945bfebf121b50a8f1a27a2c8af72&units=imperial`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data => current.innerHTML = " Current." + Math.floor(data.main.temp) + "°"))
+}
+ApiCall2();
+
+
+function ApiCall3() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=stockton&appid=2dc945bfebf121b50a8f1a27a2c8af72&units=imperial`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data => wind.innerHTML = " Wind." + Math.floor(data.wind.speed) + " mph"))
+}
+ApiCall3();
+
+
+function ApiCall4() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=stockton&appid=2dc945bfebf121b50a8f1a27a2c8af72&units=imperial`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data => feelsLike.innerHTML = " Feels like." + Math.floor(data.main.feels_like) + "°"))
+}
+ApiCall4();
+
+function ApiCall5() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=stockton&appid=2dc945bfebf121b50a8f1a27a2c8af72&units=imperial`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data => humidity.innerHTML = " Humidity " + Math.floor(data.main.humidity) + "%"))
+}
+ApiCall5();
+
+function ApiCall6() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=stockton&appid=2dc945bfebf121b50a8f1a27a2c8af72&units=imperial`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data => sunrise.innerHTML = " Sunrise " + Math.floor(data.sys.sunrise) + "am"))
+}
+ApiCall6();
+
+function ApiCall7() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=stockton&appid=2dc945bfebf121b50a8f1a27a2c8af72&units=imperial`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data => sunset.innerHTML = " Sunset " + Math.floor(data.sys.sunset) + "pm"))
+}
+ApiCall7();
+
+
