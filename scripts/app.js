@@ -6,6 +6,9 @@ let feelsLike = document.getElementById("feelsLike");
 let humidity = document.getElementById("humidity");
 let sunrise = document.getElementById("sunrise")
 let sunset = document.getElementById("sunset")
+let weatherType = document.getElementById("weatherType")
+let time = document.getElementById("time")
+let date = document.getElementById("date")
 
 
 function ApiCall() {
@@ -84,3 +87,21 @@ function ApiCall7() {
 ApiCall7();
 
 
+function ApiCall8() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=stockton&appid=2dc945bfebf121b50a8f1a27a2c8af72&units=imperial`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data => weatherType.innerHTML = " Type " + data.weather[0].main))
+}
+ApiCall8();
+
+let d = new Date();
+
+let t = new Date();
+
+
+
+document.getElementById('date').innerText = 'Current Date: ' + d.toDateString();
+
+document.getElementById('time').innerText = 'Current Time: ' + t.toLocaleTimeString();
