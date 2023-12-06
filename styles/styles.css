@@ -2,3 +2,34 @@ body {
     background-color: #97beec;
 }
 
+.collapse {
+    background-color: #7572EE;
+}
+
+.searchBar {
+
+    margin-right: 450px;
+}
+
+.vector {
+    height: 70px;
+    width: 70px;
+    margin-right: 388px;
+
+}
+
+.weather {
+    position: relative;
+    right: 370px;
+    top: 25px;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 20px;
+}
+
+.container1 {
+    height: 60%;
+    width: 60%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}

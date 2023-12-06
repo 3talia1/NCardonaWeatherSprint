@@ -104,4 +104,4 @@ let t = new Date();
 
 document.getElementById('date').innerText = 'Current Date: ' + d.toDateString();
 
-document.getElementById('time').innerText = 'Current Time: ' + t.toLocaleTimeString();
+document.getElementById('time').innerText = 'Local Time: ' + t.toLocaleTimeString();
