@@ -1,5 +1,6 @@
 body {
     background-color: #97beec;
+
 }
 
 .collapse {
@@ -26,10 +27,109 @@ body {
     font-size: 20px;
 }
 
-.container1 {
-    height: 60%;
-    width: 60%;
+/* .container1{
+    width: 800px;
+    height: 200px; 
+    border: 3px solid black;
+    margin: 100px auto 0;
     background-color: white;
+}
+
+
+#localTime {
+    margin-bottom: 10px; 
+    font-family: 'Amaranth', sans-serif;
+    
+}
+
+#time {
+    font-size: 24px; 
+    font-family: 'Amaranth', sans-serif;
+}
+
+.container3 {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+#localDate,
+#date {
+    margin-bottom: 10px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+#date {
+    font-size: 24px;
+} */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.container1 {
+    width: 1160px;
+    height: 250px;
+    border: 3px solid black;
+    margin: 20px auto 0; /* Adjusted margin to move container1 up */
+    background-color: white;
+    margin-top: 40px;
+}
+
+#localTimeLabel,
+#time,
+#localDate,
+#date {
+    margin-bottom: 5px;
+    font-family: 'Amaranth', sans-serif;
+    margin-left: 80px;
+}
+
+#localTimeLabel {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#time {
+    font-size: 30px;
+}
+
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    margin-top: -60px;
+    margin-right: 100px;
+}
+
+#localDate,
+#date {
+    margin-bottom: 15px;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.containerStar{
+    margin-left: 1360px; 
+    margin-top: -70px;
+}
+
+#weatherType{
+    font-size: 40px;
+    font-family: 'Amaranth', sans-serif;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+#current {
+    margin-left: 350px;
+    
+
 }

@@ -35,7 +35,7 @@ function ApiCall2() {
         .then((response) => {
             return response.json();
         })
-        .then((data => current.innerHTML = " Current." + Math.floor(data.main.temp) + "°"))
+        .then((data => current.innerHTML =  Math.floor(data.main.temp) + "°F"))
 }
 ApiCall2();
 
@@ -92,7 +92,7 @@ function ApiCall8() {
         .then((response) => {
             return response.json();
         })
-        .then((data => weatherType.innerHTML = " Type " + data.weather[0].main))
+        .then((data => weatherType.innerHTML = data.weather[0].main))
 }
 ApiCall8();
 
@@ -102,6 +102,7 @@ let t = new Date();
 
 
 
-document.getElementById('date').innerText = 'Current Date: ' + d.toDateString();
+document.getElementById('date').innerText =  d.toDateString();
 
-document.getElementById('time').innerText = 'Local Time: ' + t.toLocaleTimeString();
+document.getElementById('time').innerText =  t.toLocaleTimeString();
+
