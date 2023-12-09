@@ -27,43 +27,6 @@ body {
     font-size: 20px;
 }
 
-/* .container1{
-    width: 800px;
-    height: 200px; 
-    border: 3px solid black;
-    margin: 100px auto 0;
-    background-color: white;
-}
-
-
-#localTime {
-    margin-bottom: 10px; 
-    font-family: 'Amaranth', sans-serif;
-    
-}
-
-#time {
-    font-size: 24px; 
-    font-family: 'Amaranth', sans-serif;
-}
-
-.container3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-#localDate,
-#date {
-    margin-bottom: 10px;
-    font-family: 'Amaranth', sans-serif;
-}
-
-#date {
-    font-size: 24px;
-} */
 
 .container {
     display: flex;
@@ -75,9 +38,8 @@ body {
     width: 1160px;
     height: 250px;
     border: 3px solid black;
-    margin: 20px auto 0; /* Adjusted margin to move container1 up */
+    margin: 20px auto 0;
     background-color: white;
-    margin-top: 40px;
 }
 
 #localTimeLabel,
@@ -102,8 +64,8 @@ body {
 .container3 {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin-top: -60px;
     margin-right: 100px;
@@ -113,15 +75,16 @@ body {
 #date {
     margin-bottom: 15px;
     font-family: 'Amaranth', sans-serif;
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px;
+    /* Adjust the font size as needed */
 }
 
-.containerStar{
-    margin-left: 1360px; 
+.containerStar {
+    margin-left: 1360px;
     margin-top: -70px;
 }
 
-#weatherType{
+#weatherType {
     font-size: 40px;
     font-family: 'Amaranth', sans-serif;
     margin-left: 120px;
@@ -130,6 +93,86 @@ body {
 
 #current {
     margin-left: 350px;
-    
+    margin-top: -130px;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 73px;
 
+}
+
+.img-fluid {
+    margin-left: 130px
+}
+
+#feelsLike {
+    margin-left: 345px;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 25px;
+}
+
+#highest {
+    margin-top: -228px;
+    margin-left: 645px;
+    font-family: 'Amaranth', sans-serif;
+
+
+}
+
+
+.content-container {
+    white-space: nowrap;
+}
+
+.highArrow {
+    margin-left: 600px;
+    margin-top: -350px;
+
+}
+
+#lowest {
+    margin-left: 645px;
+    margin-top: 35px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.lowArrow {
+    margin-left: 600px;
+    margin-top: -250px;
+}
+
+#humidity {
+    margin-left: 645px;
+    margin-top: 30px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.rainIcon {
+    margin-left: 600px;
+    margin-top: -90px;
+}
+
+#wind {
+    margin-left: 950px;
+    margin-top: -209px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.custom-card-style {
+    border: 2px solid #000;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+#dayss {
+    font-family: 'Amaranth', sans-serif;
+    text-align: center;
+}
+
+.vector{
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }

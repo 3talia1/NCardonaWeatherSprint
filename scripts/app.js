@@ -16,7 +16,7 @@ function ApiCall() {
         .then((response) => {
             return response.json();
         })
-        .then((data => lowest.innerHTML = " Low." + Math.floor(data.main.temp_min) + "°"))
+        .then((data => lowest.innerHTML = " Low: " + Math.floor(data.main.temp_min) + "°F"))
 }
 ApiCall();
 
@@ -26,7 +26,7 @@ function ApiCall1() {
         .then((response) => {
             return response.json();
         })
-        .then((data => highest.innerHTML = " High." + Math.floor(data.main.temp_max) + "°"))
+        .then((data => highest.innerHTML = " High: " + Math.floor(data.main.temp_max) + "°F"))
 }
 ApiCall1();
 
@@ -35,7 +35,7 @@ function ApiCall2() {
         .then((response) => {
             return response.json();
         })
-        .then((data => current.innerHTML =  Math.floor(data.main.temp) + "°F"))
+        .then((data => current.innerHTML = Math.floor(data.main.temp) + "°F"))
 }
 ApiCall2();
 
@@ -45,7 +45,7 @@ function ApiCall3() {
         .then((response) => {
             return response.json();
         })
-        .then((data => wind.innerHTML = " Wind." + Math.floor(data.wind.speed) + " mph"))
+        .then((data => wind.innerHTML = " Wind: " + Math.floor(data.wind.speed) + " mph"))
 }
 ApiCall3();
 
@@ -55,7 +55,7 @@ function ApiCall4() {
         .then((response) => {
             return response.json();
         })
-        .then((data => feelsLike.innerHTML = " Feels like." + Math.floor(data.main.feels_like) + "°"))
+        .then((data => feelsLike.innerHTML = " Feels Like " + Math.floor(data.main.feels_like) + "° F"))
 }
 ApiCall4();
 
@@ -64,9 +64,12 @@ function ApiCall5() {
         .then((response) => {
             return response.json();
         })
-        .then((data => humidity.innerHTML = " Humidity " + Math.floor(data.main.humidity) + "%"))
+        .then((data => humidity.innerHTML = " Humidity: " + Math.floor(data.main.humidity) + "%"))
 }
 ApiCall5();
+
+
+
 
 function ApiCall6() {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=stockton&appid=2dc945bfebf121b50a8f1a27a2c8af72&units=imperial`)
@@ -77,6 +80,13 @@ function ApiCall6() {
 }
 ApiCall6();
 
+
+
+
+
+
+
+
 function ApiCall7() {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=stockton&appid=2dc945bfebf121b50a8f1a27a2c8af72&units=imperial`)
         .then((response) => {
@@ -85,6 +95,9 @@ function ApiCall7() {
         .then((data => sunset.innerHTML = " Sunset " + Math.floor(data.sys.sunset) + "pm"))
 }
 ApiCall7();
+
+
+
 
 
 function ApiCall8() {
@@ -102,7 +115,7 @@ let t = new Date();
 
 
 
-document.getElementById('date').innerText =  d.toDateString();
+document.getElementById('date').innerText = d.toDateString();
 
-document.getElementById('time').innerText =  t.toLocaleTimeString();
+document.getElementById('time').innerText = t.toLocaleTimeString();
 
